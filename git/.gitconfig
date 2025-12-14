@@ -1,0 +1,7 @@
+[user]
+	name = Javier HM
+	email = javierhm2004@gmail.com
+[alias]
+	last = log -1 HEAD
+	cm = commit -m
+	aa = add .
