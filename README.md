@@ -9,6 +9,7 @@ Don't blindly use this dotfiles since they are my desired config. Fork the repo 
 - **Git**: `.gitconfig`
 - **Windows Terminal**: `settings.json`
 - **PowerShell**: `Microsoft.PowerShell_profile.ps1`
+- **fastfetch**: `config.jsonc`, `logo.txt`
 
 ## 🚀 How to Install
 
@@ -18,8 +19,8 @@ Don't blindly use this dotfiles since they are my desired config. Fork the repo 
 ### 📦 Requirements
 
 - Git
-- Any app/program you want to apply the settings to
-- Check your fonts and make sure you have everything installed
+- Any app/program you want to apply the settings to (fastfetch...)
+- Check your fonts and make sure you have everything installed (JetBrains Mono...)
 
 ### Fast install
 
