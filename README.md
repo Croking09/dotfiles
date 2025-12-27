@@ -19,6 +19,7 @@ Don't blindly use this dotfiles since they are my desired config. Fork the repo 
 
 - Git
 - Any app/program you want to apply the settings to
+- Check your fonts and make sure you have everything installed
 
 ### Fast install
 
