@@ -38,6 +38,18 @@ if [[ "$OS" == "windows" ]]; then
   echolog "Windows detected, git bash used, MSYS is set to winsymlinks:nativestrict"
 fi
 
+ask() {
+  while true; do
+    printf "%s [y/n]: " "$1"
+    read -r yn
+    case "$yn" in
+      [Yy]*) return 0 ;;
+      [Nn]*) return 1 ;;
+      *) echo "Unsupported answer" ;;
+    esac
+  done
+}
+
 windows_only() {
   local os="$1"
   shift
@@ -72,3 +84,14 @@ windows_only "$OS" link_force \
 windows_only "$OS" link_force \
   "$HOME/dotfiles/terminal/settings.json" \
   "$HOME/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json"
+
+#=== fastfetch ===
+if ask "Do you want to configure fastfetch?"; then
+  link_force "$HOME/dotfiles/fastfetch/config.jsonc" \
+    "$HOME/.config/fastfetch/config.jsonc"
+
+  link_force "$HOME/dotfiles/fastfetch/logo.txt" \
+    "$HOME/.config/fastfetch/logo.txt"
+else
+  echolog "Skipping fastfetch configuration"
+fi

@@ -1,4 +1,3 @@
-
 function global:prompt {
     $cwd = (Get-Location).ProviderPath
 
@@ -18,4 +17,12 @@ function global:prompt {
 
     # Retornar el prompt final
     "PS $cwd$branch> "
+}
+
+# Limpia la terminal y "oculta" el mensaje del nuevo powershell
+Clear-Host
+
+# Ejecutar fastfetch si está instalado
+if (Get-Command fastfetch -ErrorAction SilentlyContinue) {
+  fastfetch
 }
