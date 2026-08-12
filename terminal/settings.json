@@ -1,82 +1,86 @@
 {
-  "$help": "https://aka.ms/terminal-documentation",
-  "$schema": "https://aka.ms/terminal-profiles-schema",
-  "actions": [],
-  "alwaysShowNotificationIcon": false,
-  "centerOnLaunch": true,
-  "copyFormatting": "none",
-  "copyOnSelect": false,
-  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-  "disabledProfileSources": [
-    "Windows.Terminal.Azure",
-    "Windows.Terminal.VisualStudio"
-  ],
-  "focusFollowMouse": false,
-  "initialPosition": ",",
-  "keybindings": [
-    {
-      "id": "Terminal.CopyToClipboard",
-      "keys": "ctrl+c"
-    },
-    // {
-    //   "id": "Terminal.PasteFromClipboard",
-    //   "keys": "ctrl+v"
-    // },
-    {
-      "id": "Terminal.DuplicatePaneAuto",
-      "keys": "alt+shift+d"
-    }
-  ],
-  "newTabMenu": [
-    {
-      "type": "remainingProfiles"
-    }
-  ],
-  "profiles": {
-    "defaults": {
-      "colorScheme": "Dark+",
-      "cursorShape": "filledBox",
-      "font": {
-        "face": "JetBrains Mono",
-        "size": 14
-      }
-    },
-    "list": [
-      {
-        "colorScheme": {
-          "light": "Dark+"
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [],
+    "alwaysShowNotificationIcon": false,
+    "centerOnLaunch": true,
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "disabledProfileSources": 
+    [
+        "Windows.Terminal.Azure",
+        "Windows.Terminal.VisualStudio"
+    ],
+    "focusFollowMouse": false,
+    "initialPosition": ",",
+    "keybindings": 
+    [
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
         },
-        "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-        "hidden": false,
-        "name": "Windows PowerShell"
-      },
-      {
-        "commandline": "%SystemRoot%\\System32\\cmd.exe",
-        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-        "hidden": false,
-        "name": "S\u00edmbolo del sistema"
-      },
-      {
-        "colorScheme": "Ubuntu",
-        "guid": "{8a54451b-e1f3-52d4-959f-99db8c6864c6}",
-        "hidden": false,
-        "name": "Ubuntu",
-        "source": "Microsoft.WSL"
-      },
-      {
-        "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
-        "hidden": false,
-        "name": "Git Bash",
-        "source": "Git"
-      }
-    ]
-  },
-  "schemes": [],
-  "searchWebDefaultQueryUrl": null,
-  "showTabsFullscreen": true,
-  "showTerminalTitleInTitlebar": false,
-  "theme": "dark",
-  "themes": [],
-  "useAcrylicInTabRow": false
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        }
+    ],
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "colorScheme": "Dark+",
+            "cursorShape": "filledBox",
+            "font": 
+            {
+                "face": "JetBrains Mono",
+                "size": 14
+            }
+        },
+        "list": 
+        [
+            {
+                "colorScheme": 
+                {
+                    "light": "Dark+"
+                },
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoLogo",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "S\u00edmbolo del sistema"
+            },
+            {
+                "colorScheme": "Ubuntu",
+                "guid": "{8a54451b-e1f3-52d4-959f-99db8c6864c6}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
+                "name": "Git Bash",
+                "source": "Git"
+            }
+        ]
+    },
+    "schemes": [],
+    "searchWebDefaultQueryUrl": null,
+    "showTabsFullscreen": true,
+    "showTerminalTitleInTitlebar": false,
+    "theme": "dark",
+    "themes": [],
+    "useAcrylicInTabRow": false
 }
