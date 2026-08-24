@@ -5,3 +5,4 @@
 	last = log -1 HEAD
 	cm = commit -m
 	aa = add .
+	co = checkout
